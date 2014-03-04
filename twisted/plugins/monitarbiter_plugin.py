@@ -20,7 +20,8 @@ class ArbiterServiceMaker(object):
 
     def makeService(self, options):
         m = MonitArbiter()
-        return internet.TCPServer(int(options["port"]), server.Site(m.app.resource()))
+        factory = server.Site(m.app.resource())
+        return internet.TCPServer(int(options["port"]), factory)
 
 
 serviceMaker = ArbiterServiceMaker()
