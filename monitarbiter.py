@@ -12,7 +12,7 @@ from twisted.python import log
 from twisted.internet import defer
 from lxml import objectify
 
-_monithosts = set(['http://10.0.1.16:2812'])
+_monithosts = {'http://10.0.1.16:2812'}
 
 
 def get_assets_path(*path):
