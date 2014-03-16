@@ -1,0 +1,22 @@
+<!doctype html>
+<html ng-app="phonecatApp">
+<head>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.10/angular.js"></script>
+
+    <script src="/assets/js/ui-bootstrap-tpls-0.10.0.js"></script>
+
+    <link rel="stylesheet/less" href="/assets/css/bootstrap.less">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.6.3/less.min.js"></script>
+    <script src="/assets/js/controllers.js"></script>
+
+</head>
+<body ng-controller="MonitCtrl">
+<ul>
+    <li ng-repeat="monit in monits">
+        {{monit.server.id}}<span class="glyphicon glyphicon-ok-circle monit-status-monitored"></span>
+    </li>
+</ul>
+</body>
+</html>
