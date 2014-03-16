@@ -1,3 +1,4 @@
+humanize
 lxml==3.3.3
 Twisted==13.2.0
 klein==0.2.3
