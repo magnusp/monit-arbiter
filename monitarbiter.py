@@ -7,7 +7,7 @@ __version__ = "1.0.0"
 import os
 import treq
 
-from klein import route
+from klein import route, resource
 from twisted.web import static
 from twisted.internet import defer
 
